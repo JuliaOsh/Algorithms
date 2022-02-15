@@ -26,13 +26,13 @@ namespace Algorithms
             double[] randomArray = CreateRandomNumber(n);
             StructArray100 = StructCoordinateArray(randomArray);
 
-            n = 200000;
-            randomArray = CreateRandomNumber(n);
-            StructArray200 = StructCoordinateArray(randomArray);
-
             n = 100000;
             randomArray = CreateRandomNumber(n);
             ClassArray100 = ClassCoordinateArray(randomArray);
+
+            n = 200000;
+            randomArray = CreateRandomNumber(n);
+            StructArray200 = StructCoordinateArray(randomArray);
 
             n = 200000;
             randomArray = CreateRandomNumber(n);
@@ -125,24 +125,5 @@ namespace Algorithms
         {
             BenchmarkRunner.Run<Lesson3PerformanceRatio>();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
