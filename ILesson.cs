@@ -8,7 +8,7 @@ namespace Algorithms
 {
     interface ILesson
     {
-        public string LessonID { get; set; }
+        public string LessonID { get; }
         public string LessonDescription { get; set; }
     }
 }

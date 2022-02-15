@@ -1,4 +1,6 @@
 ﻿using System;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
 namespace Algorithms
 {
@@ -11,23 +13,26 @@ namespace Algorithms
                 Console.WriteLine("Choose task or 0 to exit: ");
                 Console.WriteLine("");
 
-                var tasks = new ILesson[4];
+                var tasks = new ILesson[5];
 
                 Lesson1PrimeNumberChecker isNumberPrime = new Lesson1PrimeNumberChecker();
                 AlgorithmComplexity algorithmComplexity = new AlgorithmComplexity();
                 Lesson1Fibonacci fibo = new Lesson1Fibonacci();
                 Lesson2LinkedListPoC linkedList = new Lesson2LinkedListPoC();
+                Lesson3PerformanceRatio performanceRatio = new Lesson3PerformanceRatio();
 
                 tasks[0] = isNumberPrime;
                 tasks[1] = algorithmComplexity;
                 tasks[2] = fibo;
                 tasks[3] = linkedList;
+                tasks[4] = performanceRatio;
 
                 for (int i = 0; i < tasks.Length; i++)
                 {
                     Console.WriteLine($"{tasks[i].LessonID} {tasks[i].LessonDescription}");
                 }
 
+                //TO DO rename output methods, reduce switching 
                 string input = Console.ReadLine();
                 switch (input)
                 {
@@ -45,6 +50,10 @@ namespace Algorithms
 
                     case "2.1":
                         Lesson2LinkedListPoC.Demonstration();
+                        break;
+
+                    case "3.1":
+                        Lesson3PerformanceRatio.Benchmark();
                         break;
 
                     case "0":

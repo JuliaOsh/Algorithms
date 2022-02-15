@@ -8,7 +8,7 @@ namespace Algorithms
 {
     class Lesson2LinkedListPoC : ILesson
     {
-        public string LessonID { get; set; }
+        public string LessonID { get; private set; }
         public string LessonDescription { get; set; }
 
         public Lesson2LinkedListPoC()

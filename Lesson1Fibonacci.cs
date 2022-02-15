@@ -8,7 +8,7 @@ namespace Algorithms
 {
     class Lesson1Fibonacci : ILesson
     {
-        public string LessonID { get; set; }
+        public string LessonID { get; private set; }
         public string LessonDescription { get; set; }
 
         public Lesson1Fibonacci()
