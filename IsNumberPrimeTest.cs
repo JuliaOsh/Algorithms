@@ -20,30 +20,30 @@ namespace Algorithms
         }
         public void DoTest()
         {
-			try
-			{
-				var actual = IsNumberPrime.IsPrime(Number);
+            try
+            {
+                var actual = Lesson1PrimeNumberChecker.IsPrime(Number);
 
-				if (actual == Expected)
-				{
-					Console.WriteLine("VALID TEST");
-				}
-				else
-				{
-					Console.WriteLine("INVALID TEST");
-				}
-			}
-			catch (Exception ex)
-			{
-				if (ExpectedException != null)
-				{
-					Console.WriteLine("VALID TEST");
-				}
-				else
-				{
-					Console.WriteLine("INVALID TEST");
-				}
-			}
-		}
-	}
+                if (actual == Expected)
+                {
+                    Console.WriteLine("VALID TEST");
+                }
+                else
+                {
+                    Console.WriteLine("INVALID TEST");
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ExpectedException != null)
+                {
+                    Console.WriteLine("VALID TEST");
+                }
+                else
+                {
+                    Console.WriteLine("INVALID TEST");
+                }
+            }
+        }     
+    }
 }

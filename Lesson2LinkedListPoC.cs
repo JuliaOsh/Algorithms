@@ -17,7 +17,7 @@ namespace Algorithms
             LessonDescription = "Doubly linked list. Methods demonstration";
         }
 
-        public static void Demonstration()
+        public void Demonstration()
         {
             Lesson2DoublyLinkedList doublyLinkedList = new Lesson2DoublyLinkedList();
             doublyLinkedList.AddNode(15);

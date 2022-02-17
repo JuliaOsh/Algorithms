@@ -43,7 +43,7 @@ namespace Algorithms
             }
         }
 
-        public static void TestCases()
+        public void Demonstration()
         {
             IsNumberPrimeTest TestCase1_1_1 = new IsNumberPrimeTest(true, null, 5);
             IsNumberPrimeTest TestCase1_1_2 = new IsNumberPrimeTest(true, null, 13);

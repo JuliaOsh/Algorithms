@@ -121,7 +121,7 @@ namespace Algorithms
             double[] structDistance = StructCalculateDistance(StructArray100);
         }
 
-        public static void Benchmark()
+        public void Demonstration()
         {
             BenchmarkRunner.Run<Lesson3PerformanceRatio>();
         }
