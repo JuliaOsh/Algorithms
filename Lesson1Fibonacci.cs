@@ -68,7 +68,7 @@ namespace Algorithms
             }
         }
 
-        public static void TestCases()
+        public void Demonstration()
         {
             FiboTest TestCase1_3_1 = new FiboTest(0, null, 0);
             FiboTest TestCase1_3_2 = new FiboTest(1, null, 1);

@@ -10,5 +10,6 @@ namespace Algorithms
     {
         public string LessonID { get; }
         public string LessonDescription { get; set; }
+        public void Demonstration();
     }
 }

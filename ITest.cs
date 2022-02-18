@@ -11,6 +11,6 @@ namespace Algorithms
         T Expected { get; set; }
         Exception ExpectedException { get; set; }
 
-        public void DoTest();
+        public void DoTest();        
     }
 }
